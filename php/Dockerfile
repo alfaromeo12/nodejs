@@ -6,6 +6,7 @@ MAINTAINER AA
 run yum install -y httpd
 # RUN yum-config-manager --enable remi-php73
 # RUN yum -y install php php-common php-opcache php-cli php-gd php-curl php-mysqlnd
+RUN yum -y install php 
 RUN yum -y install git
 RUN yum clean all
 # RUN php -v 
